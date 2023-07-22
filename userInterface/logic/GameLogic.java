@@ -13,4 +13,8 @@ public class GameLogic {
   return null;
  }
 
+ public static boolean sudokuIsInvalid(int[][] newGrid) {
+  return false;
+ }
+
 }
