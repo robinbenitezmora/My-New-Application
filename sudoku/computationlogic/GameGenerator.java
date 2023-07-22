@@ -14,14 +14,14 @@ public class GameGenerator {
   return unsolveGame(getSolvedGame());
  }
 
- private static int[][] unsolveGame(int[][] solvedGame) {
+ private static int[][] unsolveGame(Object object) {
   Random random = new Random(System.currentTimeMillis());
 
   boolean solvable = false;
   int[][] solvableArray = new int[GRID_BOUNDARY][GRID_BOUNDARY];
 
   while (solvable == false) {
-   SudokuUtilities.copySudokuArrayValues(solvedGame, solvableArray);
+   SudokuUtilities.copySudokuArrayValues(object, solvableArray);
 
    int index = 0;
 
