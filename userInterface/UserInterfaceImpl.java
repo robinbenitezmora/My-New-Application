@@ -16,6 +16,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import userInterface.IUserInterfaceContract.EventListener;
 
 public class UserInterfaceImpl implements IUserInterfaceContract.View,
@@ -34,23 +35,19 @@ public class UserInterfaceImpl implements IUserInterfaceContract.View,
  private static final Color BOARD_BACKGROUND_COLOR = Color.rgb(224, 242, 241);
  private static final String SUDOKU = "Sudoku";
 
- public UserInterfaceImpl(Object stageStage, stage) {
-  this.stage = stage;
-  this.root = new Group();
-  this.textFileCoordinates = new HashMap<>();
+ public UserInterfaceImpl(Stage stage) {
+  textFileCoordinates = new HashMap<>();
   initializeUserInterface();
  }
 
  private void initializeUserInterface() {
+  Group root;
   drawBackground(root);
   drawTitle(root);
   drawSudokuBoard(root);
   drawTextfields(root);
   drawGridLines(root);
   stage.show();
- }
-
- private void drawTextfields(Group root) {
  }
 
  private void drawGridLines(Group root) {
