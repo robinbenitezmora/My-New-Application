@@ -49,11 +49,12 @@ public class SudokuSolver {
     if (puzzle[x][y] == 0) {
      emptyCells[iterator] = new Coordinates(x, y);
      if (iterator == 39) {
-      return;
+      return emptyCells;
      }
     }
    }
-   return;
+   return emptyCells;
   }
+  return emptyCells;
  }
 }
