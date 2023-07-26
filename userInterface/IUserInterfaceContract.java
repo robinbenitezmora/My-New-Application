@@ -19,5 +19,7 @@ public interface IUserInterfaceContract {
   void showDialog(String message);
 
   void showError(String message);
+
+  void setListener(java.util.EventListener controlLogic);
  }
 }
