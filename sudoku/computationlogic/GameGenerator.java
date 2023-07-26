@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import domain.Coordinates;
+import domain.SudokuGame;
 import userInterface.logic.GameLogic;
 
 public class GameGenerator {
@@ -100,5 +101,9 @@ public class GameGenerator {
     newGrid[xIndex][yIndex] = 0;
    }
   }
+ }
+
+ public static SudokuGame getNewGame() {
+  return null;
  }
 }
